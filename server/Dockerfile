@@ -1,0 +1,17 @@
+# Use the official Node.js image
+FROM node:20.13.1
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the backend code
+COPY . .
+
+# Command to run the app
+CMD ["npm", "run", "start"]

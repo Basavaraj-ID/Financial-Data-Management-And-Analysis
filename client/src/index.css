@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--tertiary-color);
+    color: var(--text-primary);
+}
+
+:root {
+    --primary-color: #1A1C22; 
+    --secondary-color: #9E9E9E; 
+    --tertiary-color: #282C35;
+    --text-primary: #9E9E9E;
+    --text-secondary: #8C89B4;
+    --text-tertiary: #fff;
+    --bright-gray: #3a3d45;
+    --white: #fff;
+    --green-color-100: #1FCB4F;
+    --yellow-color-100: #FFC01E;
+}

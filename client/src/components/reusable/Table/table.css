@@ -1,0 +1,66 @@
+/** @format */
+
+.rdg {
+  position: relative;
+  background-color: var(--primary-color);
+  overflow: auto;
+}
+
+.rdg-cell {
+  outline: none;
+}
+
+.rdg .rdg-header-row .rdg-cell:first-child {
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.rdg .rdg-header-row .rdg-cell:last-child {
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.rdg-header-row {
+  background-color: var(--tertiary-color);
+  color: var(--text-secondary);
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: 0.875;
+  border: none;
+}
+
+.rdg-row {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.rdg-cell .rdg-header-cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: none;
+}
+
+.h44jtk67-0-0-beta-47 {
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.rdg-row:hover {
+  background-color: var(--bright-gray);
+}
+/* Hide vertical scrollbar */
+.rdg {
+  scrollbar-width: none; /* Firefox: Hides the scrollbar */
+  -ms-overflow-style: none; /* IE/Edge: Hides the scrollbar */
+}
+
+/* For Chrome/Safari/Edge: Hides the scrollbar */
+.rdg::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* Ensure scrolling still works */
+.rdg {
+  overflow-y: scroll; /* Enables vertical scrolling */
+  overflow-x: auto; /* Enables horizontal scrolling if needed */
+}

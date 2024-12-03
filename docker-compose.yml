@@ -1,0 +1,36 @@
+name: finanacial-data-management-app
+
+services:
+  api:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./server/.env
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    networks:
+      - finanacial-data-management-app
+    ports:
+      - 5001:5001
+  frontend:
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file: ./client/.env
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    networks:
+      - finanacial-data-management-app
+    ports:
+      - 5173:5173
+    depends_on:
+      - api
+    
+networks:
+  finanacial-data-management-app:
+    driver: bridge
+
