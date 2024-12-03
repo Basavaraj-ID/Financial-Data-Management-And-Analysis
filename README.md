@@ -12,6 +12,7 @@ A MERN stack application for managing financial data, powered by Docker.
 - [Usage Examples](#usage-examples)
   - [Accessing the Frontend](#accessing-the-frontend)
   - [Testing the Backend API with Postman](#testing-the-backend-api-with-postman)
+- [LLD Document for Transactions API and Financial Analytics](#lld-document-for-transactions-api-and-financial-analytics)
 
 ---
 
@@ -23,7 +24,6 @@ Ensure the following tools are installed:
 1. **Docker Desktop** for Windows ([Download Here](https://docs.docker.com/desktop/windows/)).
 2. **Git** for cloning the repository ([Download Here](https://git-scm.com/downloads)).
 3. **Node.js (Optional)** if running locally ([Download Here](https://nodejs.org/)).
-4. **MongoDB (Required)** if running locally ([Download Here](https://www.mongodb.com/try/download/community)).
 
 ### Cloning the Repository
 
@@ -117,3 +117,7 @@ You can use tools like Postman or any REST client to test the API. Example endpo
 - **Backend**:
   - Process API requests for transaction data.
   - Integrate with a MongoDB database for data storage.
+## LLD Document for Transactions API and Financial Analytics
+
+**LLD Document** ([Click Here](https://docs.google.com/document/d/1mtUWrkjuT71cBCYoIBo39LU9vByHWnvhWvaVMiFIDok/edit?tab=t.0#heading=h.hyoi12vz6118)).
+
