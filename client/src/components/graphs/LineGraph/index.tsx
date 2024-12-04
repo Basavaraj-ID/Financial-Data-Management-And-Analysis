@@ -12,8 +12,8 @@ import {
   ChartOptions,
   ChartData,
 } from "chart.js";
-import Dropdown from "../../reusable/Dropdown";
-import Loader from "../../reusable/Loader";
+import Dropdown from "../../shared/Dropdown";
+import Loader from "../../shared/Loader";
 import { OVERVIEW_TEXT } from "../../../utils/constants";
 
 // Register necessary Chart.js components

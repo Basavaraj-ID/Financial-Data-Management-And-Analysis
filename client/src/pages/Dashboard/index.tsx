@@ -11,7 +11,7 @@ const Dashboard = () => {
         {summaryCards.map((card, index) => (
           <SummaryCard
             key={index}
-            icon={<card.icon />}
+            icon={<card.icon className="h-[1.1rem] w-[1.1rem]" />}
             title={card.title}
             amount={card.amount}
           />

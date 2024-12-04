@@ -2,7 +2,7 @@ import { useRef, useState, useEffect, memo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Column } from "react-data-grid";
 import useDebounce from "../../../hooks/useDebounce";
-import TableWithFilters from "../../reusable/TableWithFilters";
+import TableWithFilters from "../../shared/TableWithFilters";
 import { DEFAULT_PAGE_SIZE, SEARCH_FOR_ANYTHING_TEXT, TRANSACTIONS_TEXT } from "../../../utils/constants";
 import { fetchTransactions } from "../../../utils/api/helpers";
 import { getLastYearDate } from "../../../utils/helpers";

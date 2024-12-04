@@ -41,7 +41,7 @@ const FinancialInsightsLineGraph = () => {
             } else if (timePeriod === "hour") {
                 return `${item._id}`; // Format hour data (e.g., "14:00")
             }
-            return item._id; // Fallback if none of the above match
+            return item._id; // Fallback 
         }),
         datasets: [
             {

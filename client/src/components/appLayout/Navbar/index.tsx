@@ -1,6 +1,6 @@
 import { IoNotificationsOutline } from "react-icons/io5";
 import profilePicture from "/images/profileImage.png";
-import Search from "../../reusable/Search";
+import Search from "../../shared/Search";
 import { memo, useState } from "react";
 import { useLocation } from "react-router-dom";
 
